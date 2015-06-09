@@ -14,10 +14,10 @@ public class rig : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(left) && transform.eulerAngles.z<303) {
+		if (Input.GetKey(left) && transform.eulerAngles.z<303&&ball.shoot == 0) {
 			transform.Rotate(0,0,speed);
 		} 
-		else if (Input.GetKey(right)&& transform.eulerAngles.z>63) {
+		else if (Input.GetKey(right)&& transform.eulerAngles.z>63&&ball.shoot == 0) {
 			transform.Rotate(0,0,-speed);
 		} 
 		trans = transform.eulerAngles.z;
